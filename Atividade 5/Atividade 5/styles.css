@@ -1,0 +1,89 @@
+/* Estilo padrão */
+.caixa {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2::before {
+    content: "Cinza"; /* Texto inicial */
+}
+
+.caixa {
+    background-color: gray;
+}
+
+/* Até 420px */
+@media (max-width: 420px) {
+    .caixa {
+        background-color: gray;
+    }
+    h2::before {
+        content: "Cinza";
+    }
+}
+
+/* Maior que 420px até 768px */
+@media (min-width: 421px) and (max-width: 768px) {
+    .caixa {
+        background-color: rgb(255, 145, 0);
+    }
+    h2::before {
+        content: "Laranja";
+    }
+}
+
+/* Maior que 768px até 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .caixa {
+        background-color: rgb(245, 78, 170);
+    }
+    h2::before {
+        content: "Rosa";
+    }
+}
+
+/* Maior que 1024px até 1080px */
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .caixa {
+        background-color: red;
+    }
+    h2::before {
+        content: "Vermelho";
+    }
+}
+
+/* Maior que 1080px até 1366px */
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .caixa {
+        background-color: blue;
+    }
+    h2::before {
+        content: "Azul";
+    }
+}
+
+/* Maior que 1366px até 1920px */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .caixa {
+        background-color: orange;
+    }
+    h2::before {
+        content: "Laranja";
+    }
+}
+
+/* Maior que 1920px */
+@media (min-width: 1921px) {
+    .caixa {
+        background-color: green;
+    }
+    h2::before {
+        content: "Verde";
+    }
+}
