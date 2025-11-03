@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    cursor: pointer;
+}
+
+.btn-imagem {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.janela-aberta{
+    background-image:url(img/janela-aberta.jpg);
+}
+
+.janela-fechada{
+    background-image:url(img/janela-fechada.png);
+}
+
+.janela-quebrada{
+    background-image:url(img/janela-quebrada.jpeg);
+}
