@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 12</title>
+</head>
+<body>
+
+    <h1>calculadora de area de retangulo</h1>
+
+    <label>Base: </label>
+    <input type="number" id="base" placeholder="Digite a base"><br><br>
+
+    <label>Altura: </label>
+    <input type="number" id="altura" placeholder="Digite a altura"><br><br>
+
+    <button onclick="calcularArea()">Calcular Área</button>
+
+    <h3 id="resultado"></h3>
+
+    <script>
+       class Retangulo {
+      constructor(base, altura) {
+        this.base = base;
+        this.altura = altura;
+        }
+
+        calcularArea() {
+        return this.base * this.altura;
+          }
+    }
+    function calcularArea() {
+      const base = parseFloat(document.getElementById("base").value);
+      const altura = parseFloat(document.getElementById("altura").value);
+
+      if (isNaN(base) || isNaN(altura)) {
+        document.getElementById("resultado").innerText = "Por favor, insira valores válidos.";
+        return;
+      }    
+
+
+    const retangulo = new Retangulo(base, altura);
+
+    document.getElementById("resultado").innerText =
+        `A área do retângulo é: ${retangulo.calcularArea()} M².`;
+    }
+    </script>
+</body>
+</html>
